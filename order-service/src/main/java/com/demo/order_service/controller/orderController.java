@@ -9,7 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/order")
+@RequestMapping("/api/order")
 public class orderController {
     @Autowired
     private  orderService service;
@@ -21,5 +21,6 @@ public class orderController {
          service.createOrder(order);
          return "created sucessfully";
     }
+    
 
 }

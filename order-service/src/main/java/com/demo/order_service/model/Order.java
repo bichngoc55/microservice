@@ -4,8 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
-import java.util.List;
+import java.time.LocalDateTime; 
 
 @Entity
 @Table(name="orders")
@@ -43,19 +42,6 @@ public class Order {
 
 //    @Column(name = "price")
     private BigDecimal price;
-//    public Order(Long id, String customerName, String customerPhone, String customerAddress,
-//                 String customerEmail, String orderStatus, LocalDateTime orderDate,
-//                 Integer quantity, BigDecimal price) {
-//        this.id = id;
-//        this.customerName = customerName;
-//        this.customerPhone = customerPhone;
-//        this.customerAddress = customerAddress;
-//        this.customerEmail = customerEmail;
-//        this.orderStatus = orderStatus;
-//        this.orderDate = orderDate;
-//        this.quantity = quantity;
-//        this.price = price;
-//    }
 
 
     public void setCustomerName(String customerName) {
